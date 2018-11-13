@@ -67,3 +67,11 @@
 ## Mult Leader Replication
 * two leaders will handle 50% of writes and then shipped logs
     * every machine still needs to have the update. increasing surface area
+* uniqueness constrant difficult between two db
+* bigger chance of conflict with two database updating without conflict
+    * before update, coordinate with other database to halt/check
+        * costs time
+## Sharding
+* separate data through hashes
+    * also known as point query, or one row query
+
