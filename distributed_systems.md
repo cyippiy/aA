@@ -2,7 +2,7 @@
 
 ## basic setup:
 * URL www.facebook.com
-* dns lookup to www.faceboo.com => xyz.abc.com
+* dns lookup to www.faceboo.com => xyz.ec2.aws.com
 * http request to webserver server (webrick, puma)
     *  rack hands off http request to application (rails, sinatra)
 * Application SQL request to database (Postgres, MySQL)
@@ -36,3 +36,12 @@
 * splits off into application tier
     * multiple servers that handle the appplication request
 * communicates to the POSTGRES which communicates to the database tier
+
+## Distributed Database
+* want to use RAM over disk because it's faster for lookup. so if possible
+    * however, need to write to disk because ram can/will be deleted
+* if possible, try to copy database to ram for faster read
+* ways to stress database
+    * writeload is too high and readload too low
+        * disk can only handle so much writeload
+    * small active set for ram but entire huge active set is evenly used too much
