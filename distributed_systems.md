@@ -45,8 +45,11 @@
     * writeload is too high and readload too low
         * disk can only handle so much writeload
     * small active set for ram but entire huge active set is evenly used too much
+* can either scale up or scale out
+    * scale up means buying better equipment
+    * scale out means buying more cheaper equipment
 
-## Leader Follow Replication
+## Leader Follower Replication
 * tells a leader and then leader ships logs (aka updates) to other followers so the app tier can properly read from any POSTGRES at the database tier
 * sync replication
     * go to POSTGRES leader for update
@@ -71,7 +74,27 @@
 * bigger chance of conflict with two database updating without conflict
     * before update, coordinate with other database to halt/check
         * costs time
+* async database may not update other databases quickly enough
+* sync has more latency, but more efficient
 ## Sharding
 * separate data through hashes
     * also known as point query, or one row query
 
+## Distributed Systems day 3
+* linearlization failure
+    * when leader is updated, then a user tries to see the data from a follower db, returns new data, but refreshes and the data is received from an non-updated follower db
+* partition doesn't work well on join tables
+    * denormalize the database by storing names
+    * have to to name change all tables that reference that changed data
+* __ACID__ (_Atomicity_, _Consistency_, _Isolation_, _Durability_) database
+    * __Durability__
+        * saved data is never lost
+        * accomplished by writing data out to disk before acknoledging it is saved
+        * database should never enters a corrupted, unrecoverable state
+    * __Consistency__
+        * database constraints are enforced
+        * if you add a foreign key constraint or a uniqueness constraint, DB must enforce these
+    * __Atomicity__
+        * A transation is a grouping of SQL statements
+        * db writes log lines that describe the steps of the transaction
+        * if middle of transaction your DB loses power or transaction fails, on recovery it "replays" all committed transactions in order
