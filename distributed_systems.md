@@ -98,3 +98,18 @@
         * A transation is a grouping of SQL statements
         * db writes log lines that describe the steps of the transaction
         * if middle of transaction your DB loses power or transaction fails, on recovery it "replays" all committed transactions in order
+    * __Isolation__
+        * Transactions that update disjoint data can be processed in parallel
+        * Parallel execution is essential to fast DB performance
+            * takes advantage of multiple CPU cores
+            * gives the db something to do as it waits for data to be read from or written to disk
+        * oppoiste is called serial execution: transactions are processed one-at-a-time. you don't start next transaction until current one is finished
+* Two phase locking
+    * whenever read or write a record, you must first "lock" it
+    * if two transactions try to lock a row at the same time, only one of them gets the lock
+    * if a transaction can't lock a row, it must wait until it's unlocked
+    * locks are held until the end of the transaction. then they are released
+    * two phase locking achieves "serializability"
+        * serializability means the transactions are processed as if they are a single serial executor
+        * if transaction starts only after the previous finishes
+        * but serializability lets you process in parallel, as long as the result is always the same as a serial order
