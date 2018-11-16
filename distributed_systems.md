@@ -80,39 +80,39 @@
 * separate data through hashes
     * also known as point query, or one row query
 
-## Distributed Systems day 3
-* linearlization failure
-    * when leader is updated, then a user tries to see the data from a follower db, returns new data, but refreshes and the data is received from an non-updated follower db
-* partition doesn't work well on join tables
-    * denormalize the database by storing names
-    * have to to name change all tables that reference that changed data
-* __ACID__ (_Atomicity_, _Consistency_, _Isolation_, _Durability_) database
-    * __Durability__
-        * saved data is never lost
-        * accomplished by writing data out to disk before acknoledging it is saved
-        * database should never enters a corrupted, unrecoverable state
-    * __Consistency__
-        * database constraints are enforced
-        * if you add a foreign key constraint or a uniqueness constraint, DB must enforce these
-    * __Atomicity__
-        * A transation is a grouping of SQL statements
-        * db writes log lines that describe the steps of the transaction
-        * if middle of transaction your DB loses power or transaction fails, on recovery it "replays" all committed transactions in order
-    * __Isolation__
-        * Transactions that update disjoint data can be processed in parallel
-        * Parallel execution is essential to fast DB performance
-            * takes advantage of multiple CPU cores
-            * gives the db something to do as it waits for data to be read from or written to disk
-        * oppoiste is called serial execution: transactions are processed one-at-a-time. you don't start next transaction until current one is finished
-* Two phase locking
-    * whenever read or write a record, you must first "lock" it
-    * if two transactions try to lock a row at the same time, only one of them gets the lock
-    * if a transaction can't lock a row, it must wait until it's unlocked
-    * locks are held until the end of the transaction. then they are released
-    * two phase locking achieves "serializability"
-        * serializability means the transactions are processed as if they are a single serial executor
-        * if transaction starts only after the previous finishes
-        * but serializability lets you process in parallel, as long as the result is always the same as a serial order
+# Distributed Systems day 3
+# linearlization failure
+* when leader is updated, then a user tries to see the data from a follower db, returns new data, but refreshes and the data is received from an non-updated follower db
+# partition doesn't work well on join tables
+* denormalize the database by storing names
+* have to to name change all tables that reference that changed data
+# __ACID__ (_Atomicity_, _Consistency_, _Isolation_, _Durability_) database
+* __Durability__
+    * saved data is never lost
+    * accomplished by writing data out to disk before acknoledging it is saved
+    * database should never enters a corrupted, unrecoverable state
+* __Consistency__
+    * database constraints are enforced
+    * if you add a foreign key constraint or a uniqueness constraint, DB must enforce these
+* __Atomicity__
+    * A transation is a grouping of SQL statements
+    * db writes log lines that describe the steps of the transaction
+    * if middle of transaction your DB loses power or transaction fails, on recovery it "replays" all committed transactions in order
+* __Isolation__
+    * Transactions that update disjoint data can be processed in parallel
+    * Parallel execution is essential to fast DB performance
+        * takes advantage of multiple CPU cores
+        * gives the db something to do as it waits for data to be read from or written to disk
+    * oppoiste is called serial execution: transactions are processed one-at-a-time. you don't start next transaction until current one is finished
+## Two phase locking
+* whenever read or write a record, you must first "lock" it
+* if two transactions try to lock a row at the same time, only one of them gets the lock
+* if a transaction can't lock a row, it must wait until it's unlocked
+* locks are held until the end of the transaction. then they are released
+* two phase locking achieves "serializability"
+    * serializability means the transactions are processed as if they are a single serial executor
+    * if transaction starts only after the previous finishes
+    * but serializability lets you process in parallel, as long as the result is always the same as a serial order
 
 # Distributed Systems day 4
 
@@ -128,3 +128,22 @@
     * lock table
         * naive
         * atomic solution with test-and-set
+## multiversion concurrency control
+* isolation across partititions
+* idempotent transactions can allow coordinator to redo logs from the last transaction completed
+    * solves atomicity but doesn't solve isolation
+## two phase commit
+* what happens when a db gets locked out and the user's connection dies
+    * coordinator failure => unavailability of other machine's data
+    * can be solved with timeout
+        * reintroduces isolation
+## leader/followers
+* when a leader fails, one of the followers will be promoted to leader
+* manual intervention
+    * requires operator
+    * determines leader is dead, can promote one
+## netsplit
+* when leader is split from the followers
+* how do we choose from the new leader
+    * through voting. systems have random interval for an election if no connection
+    * not byzentine fault tolerance
