@@ -113,3 +113,18 @@
         * serializability means the transactions are processed as if they are a single serial executor
         * if transaction starts only after the previous finishes
         * but serializability lets you process in parallel, as long as the result is always the same as a serial order
+
+# Distributed Systems day 4
+
+* two transactions being processed at the same time
+    * it's considered slow if it's not async, realistic situations have multiple transactions parallel at once
+* because transactions are not commutative, result is not compatible with a linear ordering of the transaction
+* locking addresses this issue
+    * acquire lock on row first, then either read or write (mutate)
+    * all locks will be released at the end
+        * two phase locking
+    * deadlock is when a transaction attempts to access a locked row
+* how does lock work
+    * lock table
+        * naive
+        * atomic solution with test-and-set
