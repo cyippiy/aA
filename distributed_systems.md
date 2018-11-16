@@ -146,4 +146,4 @@
 * when leader is split from the followers
 * how do we choose from the new leader
     * through voting. systems have random interval for an election if no connection
-    * not byzentine fault tolerance
+    * not byzantine fault tolerance
