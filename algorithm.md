@@ -33,10 +33,9 @@
 * Describe the levels of connectivity a graph can have (strongly connected, weakly connected).
     * Strongly connected
         * there's a path from any vertex to any other vertex
-    * weakly connected
-        * 
 * What are cycles?
     * cycle is when a vertex can travel
 * What are some naive ways we can store and traverse graphs? Be able to discuss time/space complexity of these approaches, and what issues we may face.
     * have a list of vertex and edge list
     * can be simplier to have Edge list to reference the vertex list with the weight
+    * O( |v| + |e| )
