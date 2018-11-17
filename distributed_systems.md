@@ -147,3 +147,4 @@
 * how do we choose from the new leader
     * through voting. systems have random interval for an election if no connection
     * not byzantine fault tolerance
+    * paxus and raft are solutions
