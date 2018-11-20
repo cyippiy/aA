@@ -39,3 +39,17 @@
     * have a list of vertex and edge list
     * can be simplier to have Edge list to reference the vertex list with the weight
     * O( |v| + |e| )
+* Give a high level overview of an Adjacency Matrix
+    * a two-axis symmetrical matrix (usually 2d array) that has a value when there's a edge for two vertices
+* If we were only concerned about time complexity, is an Adjacency Matrix efficient? Why/why not?
+    * lookup time is constant O(1)
+    * finding adjacent nodes is O(V)
+* If we were only concerned about space complexity, is an Adjacency Matrix efficient? Why/why not?
+    * stores both edges and non-edges O(V^2)
+    * only good for dense graphs 
+* Give a high level overview of an Adjacency List
+    * keeps track all connections/edges for each node. usually with linked lists
+* What benefits do we get from an Adjacency List?
+    * saves space with write. proportional to number of edges O(E)
+    * faster lookup for adjacent nodes
+        * social network is a great example for adjacency list
