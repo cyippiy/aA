@@ -12,3 +12,11 @@
     * constructor property
 * What are the valid values for an object's prototype?
     * object or null
+* What are the benefits of a Javascript closure?
+    * allows for data encapsulation
+* Formally define a Javascript closure
+    * allows a function to access variables from an environment, even after leaving the scope
+* Give an example of a closure
+    * a say hi function, which takes in a name. then a function greeting is called with name. greeting cannot be accessed directly
+* What is data encapsulation?
+    * doesn't allow data to be directly interacted/exposed
