@@ -20,3 +20,8 @@
     * a say hi function, which takes in a name. then a function greeting is called with name. greeting cannot be accessed directly
 * What is data encapsulation?
     * doesn't allow data to be directly interacted/exposed
+* What is the difference between the memory heap and call stack in javascript?
+    * memory allocation
+    * call stack is where the callbacks/functions are stored until they are complete, then they get popped off
+* What is one problem with programming languages that are fully single-threaded
+    * blocking functions can hold up execution. need to wait for an action to be done before the next one
