@@ -2,7 +2,6 @@
 
 ## Graphs
 
-
 * How do we define a graph mathematically?
     * ordered pairs. G = (V,E)
         * G: graph
@@ -53,3 +52,10 @@
     * saves space with write. proportional to number of edges O(E)
     * faster lookup for adjacent nodes
         * social network is a great example for adjacency list
+* What are the steps for DFS on a graph?
+    * For each vertex that you visit, you push on stack and keep searching until there's no new vertex that's been visited, then you pop off stack
+* What supporting data structure might you use for BFS and DFS, respectively?
+    * DFS
+        * Stack
+    * BFS
+        * Queue
