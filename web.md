@@ -18,3 +18,13 @@
     4. hypermedia
         * data sent from server to client that contains info about what client can do next aka further requests it can make
 * Walk through an arbitrary example of a RESTful request/response cycle, and describe what makes it RESTful
+
+*  What happens when you type in www.google.com and hit enter?
+    1. browser checks cache for DNS record to find corresponding IP address
+    2. if IP not found, ISP's DNS server inititates a DNS query to find ip address of server that hosts destination
+    3. Browser initiates a TCP connection with server
+        * TCP/IP three-way handshake
+    4. Browwser sends an HTTP request to the web server
+    5. Server handles the request and sends back an response
+    6. Server sends out an HTTP request
+    7. browser displays HTML content
