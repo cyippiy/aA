@@ -59,3 +59,6 @@
         * Stack
     * BFS
         * Queue
+* What are the steps for BFS on a graph?
+    * make a boolean array for each vertice in graph to represent visited. have a queue. check current node and push into queue, and change the boolean to true.
+    while queue isn't empty, you print the front of the queue and then remove it, then check adjacent nodes. if adjacent node was not visited, mark it visited and put in queue.
