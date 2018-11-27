@@ -54,3 +54,20 @@
             * bigger header
             * data doesn't always get sent out immediately
             * bigger overhead
+* What are the common HTTP methods? When are they used, and what do they accomplish? (This is a big one)
+    * GET
+        * retrieves data from a URI
+    * HEAD
+        * same as get but transfer status line and header section only
+    * POST
+        * sends data, like information, html form
+    * PUT
+        * replaces all current representation of target resource with uploaded content
+    * TRACE
+        * message loopback test along the path of the target resource
+    * DELETE
+        * removes all current represntation of target resource
+    * CONNECT
+        * established tunnel to server ID by given URI
+    * OPTION
+        * describe the communication option for target resource

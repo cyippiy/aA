@@ -34,3 +34,21 @@
 * What is the syntax for an IIFE?
     * (function(){do something})()
         * have a parenthesis around function declaration, then immediately invoke it after 
+* What is the risk we face when using == vs ===?
+    * checks for equality and coercion vs strict coercion
+* When is the value of this evaluated?
+    * runtime
+* How does use strict affect the value of this?
+    * won't be global object
+* Without use strict, what is the value of this inside a named or anonymous function?
+    * can be anything, based on what's evaluated during run-time
+* What is the value of this in method style syntax?
+    * object
+* In which phase does hoisting occur?
+    * compliation
+* What is the difference between function hoisting and variable hoisting?
+    * functions are always hoisted. variables like const and let are hoisted, but var is partially: var declaration is, but not reassignment
+* What does the new keyword do in Javascript?
+    * calls the constructor 
+* What type of function is invoked with the new keyword? What does this function return?
+    * newly created object is returned

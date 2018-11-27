@@ -74,3 +74,22 @@
     * take source code, then check neighbors for path. you update map heap with the distance. you check if the path is shorter than current value and not null...then you update. otherwise ignore. , then update parent array with the value. then you update distance from source. once you're done, pop off the map heap and repeat
 * What is the time complexity of Djikstra's algorithm?
     * O(Elog(V))
+* What is a base case in recursion? Why do we need one? Do we always need one?
+    * Base case solves the big problem in a smaller setting. recursion often calls itself so you don't want an infinite loop
+* What exactly is a Stack Overflow?
+    * stack overflow is when the stack is filled because the base case isn't addressed or solved
+* Describe direct and indirect recursion
+    * Direct is when the function calls itself
+    * Indirect is when it calls another function directly or indirectly
+* What is tail call recursion? Why is it helpful, if at all?
+    * when the last thing executed is the recusive call
+* Discuss advantages/disadvantages of recursion
+    * Advantages
+        * cleaner code
+        * simpler
+        * some problems are inherently 
+    * Disadvantages
+        * greater space requirement
+        * greater time requirement
+* How is memory allocated during recursive function calls?
+    * when a function is called on main, it allocates memory on the stack and will pop off when the function finishes executing.
