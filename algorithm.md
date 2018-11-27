@@ -62,3 +62,15 @@
 * What are the steps for BFS on a graph?
     * make a boolean array for each vertice in graph to represent visited. have a queue. check current node and push into queue, and change the boolean to true.
     while queue isn't empty, you print the front of the queue and then remove it, then check adjacent nodes. if adjacent node was not visited, mark it visited and put in queue.
+* Give an example of a use-case for Topological Sort
+    * builds. you can't run certain vertices without the dependancies first
+* What is a difference between Topological Sort and DFS?
+    * DFS looks for a node with no children. Topological doesn't care for order, but as long as there's no dependancies
+* On which types of Graphs can we do a topological sort?
+    * directional graphs
+* What data structure do we use to assist with the topological sort algorithm?
+    * stack
+* Explain the steps of Djikstra shortest-path algorithm.
+    * take source code, then check neighbors for path. you update map heap with the distance. you check if the path is shorter than current value and not null...then you update. otherwise ignore. , then update parent array with the value. then you update distance from source. once you're done, pop off the map heap and repeat
+* What is the time complexity of Djikstra's algorithm?
+    * O(Elog(V))

@@ -26,5 +26,15 @@
     * a mix of regular cookies and client-side database. can cache data, store info to load user's previous application state
 * Why are media queries useful?
     * has a block of css when certain properties are true (browser window is under 600px, etc)
-* What is mobile-first design? Be as specific as possible.
+* What is mobile-first design
+
     * by designing the layout for mobile, we allow the page display load faster for smaller devices and we change the design when the width gets larger
+
+* In which order do the React Lifecycle methods (including the optional ones) run?
+    * componentWillMount, componentDidMount, componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, componentDidUpdate, componentWillUnmount
+* In which lyfecycle methods should you make asynchronous fetches for data?
+    * componentsdidmount, componentsdidupdate 
+* In which lyfecycle methods can you call setState?
+    * componentDidMount, componentDidUpdate, componentWillReceiveProps
+* Give one explanation for why we have to make AJAX requests in componentDidMount
+    * guarentees that there's a component to update.

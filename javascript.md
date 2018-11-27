@@ -25,3 +25,12 @@
     * call stack is where the callbacks/functions are stored until they are complete, then they get popped off
 * What is one problem with programming languages that are fully single-threaded
     * blocking functions can hold up execution. need to wait for an action to be done before the next one
+* Is Javascript a single-threaded language? Explain (Hint: This may not be a yes or no question)
+    * Yes, it is but there's a JavaScript Runtime and an web API utilizing the browser
+* When is using an IIFE necessary?
+    * enables you to attach private data into a function
+    * creates fresh environment
+    * avoids polluting the global namespace
+* What is the syntax for an IIFE?
+    * (function(){do something})()
+        * have a parenthesis around function declaration, then immediately invoke it after 

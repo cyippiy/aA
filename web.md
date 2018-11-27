@@ -28,3 +28,29 @@
     5. Server handles the request and sends back an response
     6. Server sends out an HTTP request
     7. browser displays HTML content
+
+* Why do we need a DNS?
+    * Domain Name System is architure for pairing domain name with the IP address. Browser will usually request from the DNS resolver and then store the address in memory to reference it quicker next time
+
+* Explain TCP, and why it is a necessary protocol
+    * part of the transport layer, talks to application layer and will make the request to the appropriate address in the network lawyer
+* What is a datagram?
+    * basic transfer unit associated with a packet-switch network 
+* What are the benefits of UDP over TCP? What are the shortcomings?
+    * UDP
+        * pros
+            * smaller packets
+            * no connection to create/maintain
+            * more control over what data is sent
+        * cons
+            * data corruption is often, and no error recovery. either keeps corrupted data or discards all
+            * no compensation for lost packets
+            * packets can be out of order
+            * no congestion control
+    * TCP  
+        * three-way handshake. delivery acknowledgement and retransmission available
+        * in-order delivery, can/will arrange properly
+        * cons
+            * bigger header
+            * data doesn't always get sent out immediately
+            * bigger overhead
