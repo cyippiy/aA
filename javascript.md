@@ -61,3 +61,13 @@
     * stops bubbling and prevents all handlers on current element from running
 * What is event delegation?
     * having a single handler on the common ancestor (parent) and having the event fire based on the trigger/action
+* Discuss 4 differences between ES5 and ES6 that you find important
+    * Block scope with let and const vs var
+    * lexical "this"
+        * will force `this` to always point to object where it's physically located within
+    * "arguments"
+        * can use `...args`. acts like an array but isn't actually an array
+    * classes
+        * syntax for declaring classes
+    * stict mode
+* 
