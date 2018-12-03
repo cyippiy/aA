@@ -52,3 +52,4 @@
     * holds the state status
 * What does the subscribe method do in Redux?
     * listens for a particular state change and then dispatches an action accordingly
+* What does stopImmediatePropagation do?
