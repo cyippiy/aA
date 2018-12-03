@@ -93,3 +93,9 @@
         * greater time requirement
 * How is memory allocated during recursive function calls?
     * when a function is called on main, it allocates memory on the stack and will pop off when the function finishes executing.
+* What is the difference between Memoization and Tabulation?
+    * Bottom up for solving DP vs memoization is top down 
+    * avoids multiple lookups for tabulation
+* Why is memoization helpful?
+    * Can start from top and compare values of states until we get to the bottom most base state
+    * avoids computing solutions to subproblems that are not needed, more inutitive to write
