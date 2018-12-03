@@ -70,4 +70,11 @@
     * classes
         * syntax for declaring classes
     * stict mode
-* 
+* What are the steps of a try..catch block in Javascript?
+    * try block is executed
+    * if no errors, catch(err) is ignored
+    * if errors, catch is executed
+* What type of errors to try..catch blocks work for?
+    * runtime errors
+* When creating a custom error, what attributes should it have?
+    * message, name, and preferably stack
