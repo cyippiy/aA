@@ -99,3 +99,7 @@
 * Why is memoization helpful?
     * Can start from top and compare values of states until we get to the bottom most base state
     * avoids computing solutions to subproblems that are not needed, more inutitive to write
+* What is an optimal substructure? When might a problem have one?
+    * optimal substructure is when an optimal solution can be obtained by getting optimal solution of its subproblem
+    * shortest path problem
+        * from x to v is shortest path such as a combination of pathes from u to x and x to v are shortest
