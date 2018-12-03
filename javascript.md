@@ -52,3 +52,10 @@
     * calls the constructor 
 * What type of function is invoked with the new keyword? What does this function return?
     * newly created object is returned
+* How can you stop event bubbling?
+    * event.stopPropagation()
+* What is the difference between event.target and event.currentTarget?
+    * target grab the most deeply nested element
+    * current is the one where the handler is currently running
+* What does stopImmediatePropagation do?
+    * stops bubbling and prevents all handlers on current element from running
