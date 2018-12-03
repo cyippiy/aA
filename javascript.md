@@ -59,3 +59,5 @@
     * current is the one where the handler is currently running
 * What does stopImmediatePropagation do?
     * stops bubbling and prevents all handlers on current element from running
+* What is event delegation?
+    * having a single handler on the common ancestor (parent) and having the event fire based on the trigger/action
