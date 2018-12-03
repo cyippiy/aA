@@ -80,3 +80,8 @@
 * When are cookies sent to the server?
     * every request to the same domain
         * original page request, ajax, img, styles, scripts, fonts
+* What is the danger of an XSS
+    * access to same objects
+    * read/make arbitrary modifications to browser's DOM
+    * use XMLHttpRequest to send HTTP request with arbitrary content to arbitrary destination
+    * leverage HTML5 APIs and specific files from user's file stystem
