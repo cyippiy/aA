@@ -85,3 +85,8 @@
     * read/make arbitrary modifications to browser's DOM
     * use XMLHttpRequest to send HTTP request with arbitrary content to arbitrary destination
     * leverage HTML5 APIs and specific files from user's file stystem
+* What is a CSRF Attack?
+    * attack that tricks a victim into performing actions on behalf of the attacker
+* How can you prevent CSRF Vulnerabilities?
+    * anti-csrf tokens, which require having tokens when state changing form.
+        * changing password, user info, etc
