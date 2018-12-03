@@ -71,3 +71,5 @@
         * established tunnel to server ID by given URI
     * OPTION
         * describe the communication option for target resource
+* What is the difference between HTTP and HTTPS
+    * Https requires handshake which is both asymmetrical and symmetrical crypto
