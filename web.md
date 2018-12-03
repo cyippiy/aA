@@ -73,3 +73,10 @@
         * describe the communication option for target resource
 * What is the difference between HTTP and HTTPS
     * Https requires handshake which is both asymmetrical and symmetrical crypto
+* What is the difference between localStorage and sessionStorage?
+    * sessionStorage persists for the duration of browser session and is removed when tab/window is closed. can survive page reload
+* Why is it important that users cannot modify their cookies?
+    * xss. you can also change data to pretend you are another user who's authenticated
+* When are cookies sent to the server?
+    * every request to the same domain
+        * original page request, ajax, img, styles, scripts, fonts
