@@ -90,3 +90,5 @@
 * How can you prevent CSRF Vulnerabilities?
     * anti-csrf tokens, which require having tokens when state changing form.
         * changing password, user info, etc
+* What is an XMLHttpRequest?
+    * 
