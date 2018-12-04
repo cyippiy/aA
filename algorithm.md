@@ -103,3 +103,7 @@
     * optimal substructure is when an optimal solution can be obtained by getting optimal solution of its subproblem
     * shortest path problem
         * from x to v is shortest path such as a combination of pathes from u to x and x to v are shortest
+* What are the constraints of (any type of) Heap?
+* What type of Data Structure might we use to implement a heap?
+* What is the formula for getting the left child of a Heap root node? Right child?
+* What is a Priority Queue?
