@@ -91,4 +91,4 @@
     * anti-csrf tokens, which require having tokens when state changing form.
         * changing password, user info, etc
 * What is an XMLHttpRequest?
-    * 
+    * API in form of an object. can send and receive info, mainly json, xml, html, and text files
