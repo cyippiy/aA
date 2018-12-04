@@ -78,3 +78,4 @@
     * runtime errors
 * When creating a custom error, what attributes should it have?
     * message, name, and preferably stack
+* What's the difference between the DOMContentLoaded and load event triggers?
