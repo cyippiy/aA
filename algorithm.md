@@ -104,6 +104,12 @@
     * shortest path problem
         * from x to v is shortest path such as a combination of pathes from u to x and x to v are shortest
 * What are the constraints of (any type of) Heap?
+    * must be a complete biniary tree
+        * all levels of tree must be completely filled
+        * last level must have left-most nodes filled, always
+    * root node must have all of its children either greater or equal to its children (min-heap) or less than or equal to its children (max-heap)
 * What type of Data Structure might we use to implement a heap?
 * What is the formula for getting the left child of a Heap root node? Right child?
+    * 2i+1 for left child, 2i+2 for right child
 * What is a Priority Queue?
+    * queue data struture with additional properties. higher priority is dequeued before lower. otherwise removed based on their location in array
