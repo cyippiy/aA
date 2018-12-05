@@ -92,3 +92,6 @@
         * changing password, user info, etc
 * What is an XMLHttpRequest?
     * API in form of an object. can send and receive info, mainly json, xml, html, and text files
+* When are two pages considered to have the same origin?
+* How might you allow cross-origin resource sharing?
+* What is CORS?
