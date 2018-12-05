@@ -114,4 +114,9 @@
 * What is a Priority Queue?
     * queue data struture with additional properties. higher priority is dequeued before lower. otherwise removed based on their location in array
 * What is the time-complexity of Heap Sort?
+    * O (nlog(n))
+    * O(1) space
 * What are the steps for Heap Sort?
+    * an improved version of selection sort
+    * finds largest elemented and orders it in back of list
+    * then heapify, which determines which is left or right child of node
