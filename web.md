@@ -93,5 +93,8 @@
 * What is an XMLHttpRequest?
     * API in form of an object. can send and receive info, mainly json, xml, html, and text files
 * When are two pages considered to have the same origin?
+    * same protocol and host
 * How might you allow cross-origin resource sharing?
+    * you would want to allow CORS which gives permission to load content to load content from server
 * What is CORS?
+    * Cross-Origin Resource Sharing. 
