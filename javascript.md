@@ -82,3 +82,5 @@
     * browser loads HTML and DOM tree is built, but pictures/styles aren't loaded
     * resource and its dependent resources have finished loading
 * Discuss the differences between let, const, and var. What are their respective scopings?
+    * var is global scope
+    * let and const are not hoisted, and block-scoped

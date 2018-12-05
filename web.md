@@ -97,4 +97,4 @@
 * How might you allow cross-origin resource sharing?
     * you would want to allow CORS which gives permission to load content to load content from server
 * What is CORS?
-    * Cross-Origin Resource Sharing. 
+    * uses http headers to tell a browser to allow a web app running one origin to have permission to access server
