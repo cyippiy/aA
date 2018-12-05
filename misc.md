@@ -54,3 +54,5 @@
     * listens for a particular state change and then dispatches an action accordingly
 * What are presentational components?
     * components that is view oriented rather than actions.
+* Explain Context in React
+* What does the <Provider> component do?
