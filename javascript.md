@@ -84,3 +84,7 @@
 * Discuss the differences between let, const, and var. What are their respective scopings?
     * var is global scope
     * let and const are not hoisted, and block-scoped
+* What happens when you enable strict mode in javascript?
+    * 
+* How does the rest/spread operator work in JS?
+    * 
