@@ -120,3 +120,5 @@
     * an improved version of selection sort
     * finds largest elemented and orders it in back of list
     * then heapify, which determines which is left or right child of node
+* Explain the pseudocode for Merge Sort
+* What is the runtime of merge sort?
