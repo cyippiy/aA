@@ -98,3 +98,5 @@
     * you would want to allow CORS which gives permission to load content to load content from server
 * What is CORS?
     * uses http headers to tell a browser to allow a web app running one origin to have permission to access server
+* What are the advantages and disadvantages of NoSQL databases vs. SQL databases?
+    * 
