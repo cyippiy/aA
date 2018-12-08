@@ -88,3 +88,7 @@
     * 
 * How does the rest/spread operator work in JS?
     * 
+* What problem does bind solve in Javascript? How does it accomplish this?
+    * 
+* What is the syntax for passing arguments to the bind function?
+    * 
