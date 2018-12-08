@@ -121,4 +121,8 @@
     * finds largest elemented and orders it in back of list
     * then heapify, which determines which is left or right child of node
 * Explain the pseudocode for Merge Sort
+    * 
 * What is the runtime of merge sort?
+    * 
+* What are the steps for Counting Sort? What is the time complexity?
+    * 
