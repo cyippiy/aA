@@ -58,3 +58,7 @@
     * 
 * What does the <Provider> component do?
     * 
+* What are the different type of SQL Joins?
+    * 
+* What is the difference between an Inner Join and a Left Join
+    * 
