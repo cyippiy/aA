@@ -62,3 +62,5 @@
     * 
 * What is the difference between an Inner Join and a Left Join
     * 
+* What is a symbol when talking about transmitting data?
+* How is information transmitted over wireless signal?
