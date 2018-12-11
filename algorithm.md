@@ -125,4 +125,7 @@
 * What is the runtime of merge sort?
     * 
 * What are the steps for Counting Sort? What is the time complexity?
+* What are the constraints of a Binary Search Tree?
+    * 
+* What is the big O lookup time for a value in a binary search tree?
     * 
