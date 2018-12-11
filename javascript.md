@@ -92,3 +92,5 @@
     * 
 * What is the syntax for passing arguments to the bind function?
     * 
+* Does JS assign variables by value or by reference?
+    * 
