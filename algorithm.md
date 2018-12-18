@@ -121,9 +121,11 @@
     * finds largest elemented and orders it in back of list
     * then heapify, which determines which is left or right child of node
 * Explain the pseudocode for Merge Sort
-    * 
+    * find half of the elements
+    * sort the elements of both half
+    * merge the two together
 * What is the runtime of merge sort?
-    * 
+    * O(nlog(n))
 * What are the steps for Counting Sort? What is the time complexity?
 * What are the constraints of a Binary Search Tree?
     * 
