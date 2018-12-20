@@ -99,7 +99,14 @@
 * What is CORS?
     * uses http headers to tell a browser to allow a web app running one origin to have permission to access server
 * What are the advantages and disadvantages of NoSQL databases vs. SQL databases?
+    * pros
+        * data is close to english
+        * big data tasks
+    * cons
+        * not user friendly
+        * not good for real time data
 * What is Round Robin DNS binding?
+    * 
 * What issue arises regarding sessions when implementing a Load Balancer?
 * What is striping when talking about writing to a Hard drive?
 What is RAID and what functionality can it give you?
