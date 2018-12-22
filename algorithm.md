@@ -130,4 +130,5 @@
 * What are the constraints of a Binary Search Tree?
     * 
 * What is the big O lookup time for a value in a binary search tree?
-    * 
+* How can you find the maximum depth of a BST?
+* How can you determine what the Least common ancestor of two nodes is?
