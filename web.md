@@ -108,5 +108,8 @@
 * What is Round Robin DNS binding?
     * 
 * What issue arises regarding sessions when implementing a Load Balancer?
+  * 
 * What is striping when talking about writing to a Hard drive?
-What is RAID and what functionality can it give you?
+  * 
+* What is RAID and what functionality can it give you?
+  * 
