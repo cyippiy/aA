@@ -63,7 +63,12 @@
 * What is the difference between an Inner Join and a Left Join
     * 
 * What is a symbol when talking about transmitting data?
+  * 
 * How is information transmitted over wireless signal?
+  * 
 * How can you solve the sticky-session issue without shared file storage on the back-end?
+  * 
 * Explain why you might want to compile and store static HTML pages for something like a Craigslist post.
+  * 
 * What does using 'memcache' do for you?
+  * 
