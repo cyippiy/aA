@@ -95,8 +95,14 @@
 * Does JS assign variables by value or by reference?
     * 
 * What are the 7 different JS types?
-Explain the difference between + and -*/ in JS when it comes to coercion.
+  * 
+* Explain the difference between + and -*/ in JS when it comes to coercion.
+    * 
 * How do two computers ensure that the signal that is sent between them is interpreted correctly?
+  * 
 * What happens when the clocks become unsynchronized?
+  * 
 * How do computers synchronize their clocks?
+  * 
 * What is manchester coding?
+  * 
