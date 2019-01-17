@@ -130,6 +130,7 @@
     * have a count array to store the count of each unique object
     * modify the count array so that each index stores the sum of previous count.
     * look through array again,check index of the number, compare to count array for the array value, decrease by one.
+    * O(n+K) where n is number of elements in input array, k is range of input
 * What are the constraints of a Binary Search Tree?
     * 
 * What is the big O lookup time for a value in a binary search tree?
