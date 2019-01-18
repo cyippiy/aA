@@ -55,13 +55,13 @@
 * What are presentational components?
     * components that is view oriented rather than actions.
 * Explain Context in React
-    * 
+    * Context is a way to pass down data through component tree without having the pass props down manually every level
 * What does the <Provider> component do?
-    * 
+    * allows an object to subscribe to context changes
 * What are the different type of SQL Joins?
-    * 
+    * inner, left, right, and full
 * What is the difference between an Inner Join and a Left Join
-    * 
+    * inner returns when both conditions are met versus left is inner plus all of the left side
 * What is a symbol when talking about transmitting data?
   * 
 * How is information transmitted over wireless signal?
