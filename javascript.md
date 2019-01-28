@@ -85,9 +85,14 @@
     * var is global scope
     * let and const are not hoisted, and block-scoped
 * What happens when you enable strict mode in javascript?
-    * 
+    * can't use undeclared variables
+    * makes bad syntax throw errors
+        * attempt to reassign const variables, getter-setting variable, non-existent variable, non-existing object
 * How does the rest/spread operator work in JS?
-    * 
+    * js doeesn't care how many arguments a function can be called with. excessive is okay
+    * rest parameters can be called with ...args
+        * thrown into an array
+        * must be declared at the end
 * What problem does bind solve in Javascript? How does it accomplish this?
     * 
 * What is the syntax for passing arguments to the bind function?
