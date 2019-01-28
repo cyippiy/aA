@@ -95,9 +95,11 @@
         * must be declared at the end
     * spread turns an array into a list of arguments
 * What problem does bind solve in Javascript? How does it accomplish this?
-    * 
+    * preserving the correct context of an object's function
+    * assigns this= by using bind.
+        * ex: funcUser = func.bind(user)
 * What is the syntax for passing arguments to the bind function?
-    * 
+    * func.bind(context, ...args)
 * Does JS assign variables by value or by reference?
     * 
 * What are the 7 different JS types?
