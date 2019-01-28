@@ -93,6 +93,7 @@
     * rest parameters can be called with ...args
         * thrown into an array
         * must be declared at the end
+    * spread turns an array into a list of arguments
 * What problem does bind solve in Javascript? How does it accomplish this?
     * 
 * What is the syntax for passing arguments to the bind function?
