@@ -131,6 +131,11 @@
     * modify the count array so that each index stores the sum of previous count.
     * look through array again,check index of the number, compare to count array for the array value, decrease by one.
     * O(n+K) where n is number of elements in input array, k is range of input
+* What is the time complexity of Bubble Sort? What are the steps for this algorithm?
+    * O(n^2) for comparison and swaps
+    * Requires two for loops, checks if an element is greater than the next, then swaps. breaks when there's no swaps detected
+* Describe when it may be ideal to utilize Bubble Sort
+    * Nearly sorted data. O(n)
 * What are the constraints of a Binary Search Tree?
     * 
 * What is the big O lookup time for a value in a binary search tree?
