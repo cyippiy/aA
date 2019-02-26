@@ -106,11 +106,4 @@
   * 
 * Explain the difference between + and -*/ in JS when it comes to coercion.
     * 
-* How do two computers ensure that the signal that is sent between them is interpreted correctly?
-  * 
-* What happens when the clocks become unsynchronized?
-  * 
-* How do computers synchronize their clocks?
-  * 
-* What is manchester coding?
-  * 
+* How does prototypal inheritance work?
