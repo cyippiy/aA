@@ -71,4 +71,11 @@
 * Explain why you might want to compile and store static HTML pages for something like a Craigslist post.
     * 
 * What does using 'memcache' do for you?
-    * 
+
+* How do two computers ensure that the signal that is sent between them is interpreted correctly?
+  * 
+* What happens when the clocks become unsynchronized?
+  * 
+* How do computers synchronize their clocks?
+  * 
+* What is manchester coding?
