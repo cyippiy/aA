@@ -144,3 +144,7 @@
   * 
 * How can you determine what the Least common ancestor of two nodes is?
   * 
+* What is an AVL tree?
+  * 
+* How does it self balance?
+  * 
