@@ -79,3 +79,5 @@
 * How do computers synchronize their clocks?
   * 
 * What is manchester coding?
+  * *
+* 
