@@ -107,3 +107,4 @@
 * Explain the difference between + and -*/ in JS when it comes to coercion.
     * 
 * How does prototypal inheritance work?
+  * *
